@@ -1,0 +1,97 @@
+body, html {
+    color: #777;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav ol {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    background-color: #2c5369a3;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 191, 255, 0.582);
+}
+
+.bgimg-1 {
+    background-image: url("../assets/images/bg1.jpg");
+}
+
+.bgimg-2 {
+    background-image: url("../assets/images/bg2.jpg");
+}
+
+.bgimg-3 {
+    background-image: url("../assets/images/bg3.jpg");
+}
+
+.bgimg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+}
+
+.charitable_tax_number {
+    font-weight: bold;
+}
+
+.volunteer-position-list {
+    max-width: 500px;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    * {
+        scroll-snap-align: unset !important;
+        scroll-snap-stop: unset !important;
+        scroll-behavior: unset !important;
+        scroll-snap-type: none !important;
+    }
+}

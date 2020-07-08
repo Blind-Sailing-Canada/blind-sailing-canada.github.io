@@ -1,0 +1,38 @@
+.card {
+    min-height: 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.card-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.card-content-body {
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 10px;
+    color: black;
+}
+
+.card-content {
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-header {
+    background-color: #2c5369a3;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}

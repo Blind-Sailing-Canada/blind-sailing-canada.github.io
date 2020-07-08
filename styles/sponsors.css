@@ -1,0 +1,39 @@
+.sponsor-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsor-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.sponsor-info-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.sponsor-info-header h2 {
+    margin: 0;
+    line-height: 1em;
+}
+
+.sponsor-info-body {
+    line-height: 1em;
+}
+
+.sponsor-info-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.sponsor-image {
+    max-width: 270px;
+    padding: 5px;
+}

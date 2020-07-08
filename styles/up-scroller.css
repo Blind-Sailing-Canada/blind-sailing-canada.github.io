@@ -1,0 +1,21 @@
+.up-scroller {
+    align-items: center;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: none;
+    height: 30px !important;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 50px !important;
+    z-index: 9999999999;
+
+}
+.up-scroller i {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.up-scroller:hover {
+    color: deepskyblue
+}
