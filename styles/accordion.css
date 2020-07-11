@@ -3,6 +3,7 @@
     border: none;
     color: black;
     cursor: pointer;
+    font-size: x-large;
     font-weight: bold;
     outline: none;
     padding: 18px;
@@ -13,15 +14,13 @@
 
 .active, .accordion-button:hover {
     background-color: rgba(0, 191, 255, 0.582);
-
 }
 
 .accordion-button:after {
-    content: '\002B';
     color: black;
-    font-weight: bold;
+    content: '\002B';
     float: right;
-    margin-left: 5px;
+    font-weight: bold;
 }
 
 .active:after {
@@ -29,10 +28,10 @@
 }
 
 .accordion-description {
-    padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
+    padding: 0 18px;
     transition: max-height 0.2s ease-out;
 }
 
