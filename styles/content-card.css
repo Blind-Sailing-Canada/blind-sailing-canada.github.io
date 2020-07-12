@@ -1,6 +1,6 @@
 .card {
-    height: 110%;
-    min-height: 110%;
+    height: 120%;
+    min-height: 120%;
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
