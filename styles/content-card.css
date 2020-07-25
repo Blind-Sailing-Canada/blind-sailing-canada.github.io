@@ -34,7 +34,10 @@
 .card-header {
     background-color: #2c5369a3;
     color: #fff;
-    padding: 18px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin: 0;
     font-size: 25px;
     letter-spacing: 10px;
+
 }

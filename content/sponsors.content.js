@@ -1,9 +1,10 @@
-const SPONSORS = [
+const SponsorsDescription = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+const Sponsors = [
     {
         name: 'Island Yacht Club',
         description: 'Nestled on a private island and dedicated to active, resort-style living, Island Yacht Club is your Cottage-in-the-City.',
         website: 'https://iyc.ca/',
-        logo: './assets/images/sponsors/iyc_logo_2019.webp',
+        logo: './assets/images/sponsors/iyc_logo_2019.png',
         logoStyle: '',
     },
     {
@@ -31,10 +32,29 @@ const SPONSORS = [
         name: 'Gone Sailing Adventures',
         description: 'Gone Sailing Adventures was founded in 2008 by Howie Colt and started charters in 2010.',
         website: 'https://www.gonesailingadventures.com/',
-        logo: './assets/images/sponsors/GoneSailing_HORIZ_RGB_white-1920w-302w.webp',
+        logo: './assets/images/sponsors/GoneSailing_HORIZ_RGB_white-1920w-302w.png',
         logoStyle: 'background-color: #11174f;',
     }
 ];
+
+const loadSponsorsDescription = (displayId) => {
+    const display = document.getElementById(displayId);
+
+    display.innerHTML = SponsorsDescription;
+};
+
+const loadSponsorsList = (displayId) => {
+    const display = document.getElementById(displayId);
+
+    let sponsorsList = '';
+
+    Sponsors.forEach((sponsor) => {
+        sponsorsList += `<dt><a href="${sponsor.website}">${sponsor.name}</a></dt><dd>${sponsor.description}<dd>`;
+    });
+
+    display.innerHTML = sponsorsList;
+};
+
 
 const flipCard = (sponsor) => {
     const card = `
@@ -55,10 +75,10 @@ const flipCard = (sponsor) => {
     return card;
 };
 
-const displaySponsors = (containerId, sponsors) => {
+const displaySponsors = (containerId) => {
     const container = document.getElementById(containerId);
 
-    sponsors.forEach((sponsor) => {
+    Sponsors.forEach((sponsor) => {
         const card = flipCard(sponsor);
         container.innerHTML += card;
     })

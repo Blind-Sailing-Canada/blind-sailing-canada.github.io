@@ -48,9 +48,16 @@
             type="image/x-icon"
         >
         <script src="./js/accordion.js"></script>
-        <script src="./js/sponsors.js"></script>
         <script src="./js/up-scroller.js"></script>
         <script src="./js/video.js"></script>
+        <script src="./content/header.content.js"></script>
+        <script src="./content/nav-links.content.js"></script>
+        <script src="./content/about-us.content.js"></script>
+        <script src="./content/sponsors.content.js"></script>
+        <script src="./content/become-sponsor.content.js"></script>
+        <script src="./content/volunteers.content.js"></script>
+        <script src="./content/become-volunteer.content.js"></script>
+        <script src="./content/contact-us.content.js"></script>
     </head>
 
     <body>
@@ -63,32 +70,27 @@
                 aria-hidden="true"
             ></i>
         </div>
-        <main>
-            <img
+        <img
             class="bsc-logo"
             src="./assets/images/bsc-logo.svg"
         >
-            <div class="card">
-                <div class="card-content card-background bgimg-1">
-                    <div class="card-header">
-                        <h1>BLIND SAILING CANADA.</h1>
-                        <h2>Catch the wind, feel the freedom.</h2>
-                    </div>
-                    <nav>
-                        <ol>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#sponsors">SPONSORS</a></li>
-                            <li><a href="#volunteers">VOLUNTEERS</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content card-background bgimg-2">
-                    <div class="card-header">
-                        <h3><a id="about">ABOUT US</a></h3>
-                    </div>
+        <main>
+            <article class="card card-content card-background bgimg-1">
+                <header
+                    class="card-header"
+                    id="mainHeader"
+                ></header>
+                <nav>
+                    <a
+                        id="plainVersion"
+                        href="/index-aria.html"
+                    >Accessible Version</a>
+                    <ol id="navigationList"></ol>
+                </nav>
+            </article>
+            <article class="card card-content card-background bgimg-2">
+                <h3 class="card-header"><a id="about">ABOUT US</a></h3>
+                <section>
                     <video
                         preload="auto"
                         poster="./assets/images/ami-video-poster.JPG"
@@ -96,99 +98,71 @@
                         controls
                         id="video_BSC_AMI"
                         src="./assets/videos/bsc-ami.mp4"
+                        width="80%"
                     ></video>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content card-background bgimg-3">
-                    <div class="card-header">
-                        <h3><a id="sponsors">SPONSORS</a></h3>
-                    </div>
-                    <div class="card-content-body">
-                        <p>Blind Sailing acknowledges the generous and ongoing support of the many supporters of our program.</p>
-                        <div
-                            class="sponsor-list"
-                            id="sponsorsList"
-                        ></div>
-                        <div>
-                            <h4>Become a sponsor</h4>
-                            <p> Your financial support allows the charity to deliver and enrich our programs that benefit blind sailors. If you wish to make a finantial donation, please visit our CanadaHelps.org <a
-                                    href="https://www.canadahelps.org/en/charities/id/90212/"
-                                    target="_blank"
-                                >account</a>. </p>
-                            <p>Our charitable tax number is <span class="charitable_tax_number">864 299 425 RR0001</span>.</p>
-                            <p>If you wish to support us in other ways, please feel free to contact us by email at <a href="mailto:info@blindsailing.ca">info@blindsailing.ca</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content card-background bgimg-4">
-                    <div class="card-header">
-                        <h3><a id="volunteers">VOLUNTEERS</a></h3>
-                    </div>
-                    <div class="card-content-body">
-                        <p>Blind Sailing is made possible by our numerous volunteers.</p>
-                        <div
-                            id="volunteerPositions"
-                            class="volunteer-position-list"
-                        ></div>
-                        <div>
-                            <h4>Become a volunteer</h4>
-                            <p> If you wish to become a volunteer, please send us an email at <a href="mailto:info@blindsailing.ca">info@blindsailing.ca</a> and tell us about youself and how you would like to help. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content card-background bgimg-2">
-                    <div class="card-header">
-                        <h3><a id="contact">CONTACT</a></h3>
-                    </div>
-                    <div class="card-content-body">
-                        <p>You contact us by email <a href="mailto:info@blindsailing.ca">info@blindsailing.ca</a>,</p>
-                        <p>or you can connect with us on social networks:</p>
-                        <div class="social-networks-list">
-                            <a
-                                class="fa fa-facebook"
-                                href="https://www.facebook.com/pages/Blind-Sailing-Association-of-Canada"
-                                target="_blank"
-                            ></a>
-                            <a
-                                class="fa fa-twitter"
-                                href="https://twitter.com/blindsailingcan"
-                                target="_blank"
-                            ></a>
-                            <a
-                                class="fa fa-linkedin"
-                                href="https://www.linkedin.com/company/blindsailing"
-                                target="_blank"
-                            ></a>
-                            <a
-                                class="fa fa-youtube"
-                                href="https://www.youtube.com/channel/UCluZREjvbLSSWq60VHSbpXg"
-                                target="_blank"
-                            ></a>
-                            <a
-                                class="fa fa-instagram"
-                                href="#"
-                                target="_blank"
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content card-background bgimg-1">
-                    <footer class="card-header">COPYRIGHT BLIND SILING CANADA 2020</footer>
-                </div>
-            </div>
+                </section>
+                <section class="card-content-body">
+                    <p id="aboutUsDescription"></p>
+                </section>
+            </article>
+            <article class="card card-content card-background bgimg-3">
+                <h3 class="card-header"><a id="sponsors">SPONSORS</a></h3>
+                <section class="card-content-body">
+                    <p id="sponsorsDescription"></p>
+                    <div
+                        class="sponsor-list"
+                        id="sponsorsList"
+                    ></div>
+                </section>
+                <section class="card-content-body">
+                    <h4>Become a sponsor</h4>
+                    <article id="becomeSponsor"></article>
+                </section>
+            </article>
+            <article class="card card-content card-background bgimg-4">
+                <h3 class="card-header"><a id="volunteers">VOLUNTEERS</a></h3>
+                <section class="card-content-body">
+                    <p id="volunteersDescription"></p>
+                    <div
+                        id="volunteerPositions"
+                        class="volunteer-position-list"
+                    ></div>
+                </section>
+                <section class="card-content-body">
+                    <h4>Become a volunteer</h4>
+                    <p id="becomeVolunteer"></p>
+                </section>
+            </article>
+            <article class="card card-content card-background bgimg-2">
+                <h3 class="card-header"><a id="contact">CONTACT</a></h3>
+                <section class="card-content-body">
+                    <h3>Email</h3>
+                    <p id="contactEmail"></p>
+                </section>
+                <section class="card-content-body">
+                    <h3>Social Networks</h3>
+                    <p>You can also connect with us on social networks:</p>
+                    <ol id="socialNetworksList"></ol>
+                </section>
+            </article>
         </main>
+        <footer class="card card-content card-background bgimg-1">
+            <p class="card-header">COPYRIGHT BLIND SILING CANADA 2020</p>
+        </footer>
         <script>
-            displaySponsors('sponsorsList', SPONSORS);
+            loadHeader('mainHeader');
+            loadNavLinks('navigationList');
+            loadAboutUs('aboutUsDescription');
+            loadSponsorsDescription('sponsorsDescription');
+            loadBecomeSponsor('becomeSponsor');
+            loadVolunteersDescription('volunteersDescription');
+            loadBecomeVolunteer('becomeVolunteer');
+            loadContactUsEmail('contactEmail');
+            displaySponsors('sponsorsList');
+            displayContactUsSocialNetworks('socialNetworksList');
             autoPlayVideo('video_BSC_AMI');
             setUpScroll('upScroller');
-            createAccordion('volunteerPositions', VOLUNTEER_POSITIONS);
+            createAccordion('volunteerPositions', Volunteers);
         </script>
     </body>
 

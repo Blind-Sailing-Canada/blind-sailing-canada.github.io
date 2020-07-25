@@ -1,0 +1,83 @@
+<html>
+
+    <head>
+        <title>Blind Sailing Canada</title>
+        <link
+            rel="icon"
+            href="./assets/images/favicon.ico"
+            type="image/x-icon"
+        >
+        <script src="./content/header.content.js"></script>
+        <script src="./content/nav-links.content.js"></script>
+        <script src="./content/about-us.content.js"></script>
+        <script src="./content/sponsors.content.js"></script>
+        <script src="./content/become-sponsor.content.js"></script>
+        <script src="./content/volunteers.content.js"></script>
+        <script src="./content/become-volunteer.content.js"></script>
+        <script src="./content/contact-us.content.js"></script>
+
+    </head>
+
+    <body>
+        <header id="mainHeader"></header>
+        <nav>
+            <ol id="navigationList"></ol>
+        </nav>
+        <main>
+            <article>
+                <h3><a id="about">ABOUT US</a></h3>
+                <p id="aboutUsDescription"></p>
+            </article>
+            <article>
+                <h3><a id="sponsors">SPONSORS</a></h3>
+                <section>
+                    <p id="sponsorsDescription"></p>
+                    <dl id="sponsorsList"></dl>
+                </section>
+                <section>
+                    <h4>Become a sponsor</h4>
+                    <article id="becomeSponsor"></article>
+                </section>
+            </article>
+            <article>
+                <h3><a id="volunteers">VOLUNTEERS</a></h3>
+                <section>
+                    <p id="volunteersDescription"></p>
+                    <dl
+                        id="volunteersList"
+                    ></dl>
+                </section>
+                <section>
+                    <h4>Become a volunteer</h4>
+                    <p id="becomeVolunteer"></p>
+                </section>
+            </article>
+            <article>
+                <h3><a id="contact">CONTACT</a></h3>
+                <section>
+                    <h3>Email</h3>
+                    <p id="contactEmail"></p>
+                </section>
+                <section>
+                    <h3>Social Networks</h3>
+                    <p>You can also connect with us on social networks:</p>
+                    <ol id="socialNetworksList"></ol>
+                </section>
+        </main>
+        <footer>COPYRIGHT BLIND SILING CANADA 2020</footer>
+        <script>
+            loadHeader('mainHeader');
+            loadNavLinks('navigationList');
+            loadAboutUs('aboutUsDescription');
+            loadSponsorsDescription('sponsorsDescription');
+            loadSponsorsList('sponsorsList');
+            loadBecomeSponsor('becomeSponsor');
+            loadVolunteersDescription('volunteersDescription');
+            loadVolunteersList('volunteersList');
+            loadBecomeVolunteer('becomeVolunteer');
+            loadContactUsEmail('contactEmail');
+            loadContactUsSocialNetworks('socialNetworksList');
+        </script>
+    </body>
+
+</html>

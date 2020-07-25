@@ -8,13 +8,27 @@ body, html {
     text-align: center;
 }
 
+header h1 {
+    font-size: 2em;
+}
+
+main {
+    width: 100%;
+}
+
+article {
+    width: 100%;
+}
+
 h1, h2 {
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 nav {
     margin: 10px;
+    text-transform: uppercase;
 }
 
 nav ol {
@@ -43,6 +57,18 @@ nav a {
 nav a:hover {
     background-color: rgba(0, 191, 255, 0.582);
 }
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    background-attachment: fixed;
+    background-attachment:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-background-size: 1920px 960px;
+  }
+
 
 .bgimg-1 {
     background-image: url("../assets/images/bg1.jpg");
@@ -75,15 +101,11 @@ nav a:hover {
     width: 300px;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+        background-attachment: scroll !important;
     }
-}
 
-@media screen and (max-height: 500px) {
     * {
         scroll-snap-align: unset !important;
         scroll-snap-stop: unset !important;
