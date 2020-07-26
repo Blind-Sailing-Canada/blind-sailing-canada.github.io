@@ -1,4 +1,4 @@
-const ContactUsEmail = `You contact us by email <a href="mailto:info@blindsailing.ca">info@blindsailing.ca</a>`;
+const ContactUsEmail = `You can contact us by email <a href="mailto:info@blindsailing.ca">info@blindsailing.ca</a>`;
 
 const SocialNetworks = [
     {
