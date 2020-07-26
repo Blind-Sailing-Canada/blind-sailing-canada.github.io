@@ -12,14 +12,6 @@ header h1 {
     font-size: 2em;
 }
 
-main {
-    width: 100%;
-}
-
-article {
-    width: 100%;
-}
-
 h1, h2 {
     margin: 0;
     padding: 0;
@@ -61,14 +53,10 @@ nav a:hover {
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     position: relative;
     background-attachment: fixed;
-    background-attachment:scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    -webkit-background-size: 1920px 960px;
-  }
-
+}
 
 .bgimg-1 {
     background-image: url("../assets/images/bg1.jpg");
@@ -102,10 +90,14 @@ nav a:hover {
 }
 
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll !important;
     }
-
+    /* @supports (-webkit-touch-callout: none) {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+            background-attachment: scroll !important;
+        }
+      } */
     * {
         scroll-snap-align: unset !important;
         scroll-snap-stop: unset !important;
