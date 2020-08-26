@@ -1,7 +1,7 @@
 .accordion-button {
     background-color: #2c5369a3;
     border: none;
-    color: black;
+    color: white;
     cursor: pointer;
     font-size: x-large;
     font-weight: bold;
@@ -17,7 +17,7 @@
 }
 
 .accordion-button:after {
-    color: black;
+    color: white;
     content: '\002B';
     float: right;
     font-weight: bold;

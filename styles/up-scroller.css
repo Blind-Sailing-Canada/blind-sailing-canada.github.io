@@ -1,6 +1,6 @@
 .up-scroller {
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: white;
     cursor: pointer;
     display: none;
     height: 30px !important;

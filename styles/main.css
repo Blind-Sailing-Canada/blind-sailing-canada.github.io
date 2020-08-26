@@ -36,8 +36,14 @@ nav li {
     margin: 0;
 }
 
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 nav a {
-    background-color: #2c5369a3;
     color: white;
     font-weight: bold;
     letter-spacing: 5px;
@@ -93,11 +99,6 @@ nav a:hover {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll !important;
     }
-    /* @supports (-webkit-touch-callout: none) {
-        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-            background-attachment: scroll !important;
-        }
-      } */
     * {
         scroll-snap-align: unset !important;
         scroll-snap-stop: unset !important;
