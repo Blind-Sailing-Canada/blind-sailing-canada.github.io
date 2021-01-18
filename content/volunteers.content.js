@@ -1,4 +1,9 @@
-const VolunteersDescription = 'We would like you to share your skills, experiences, and love of sailing with our club.'
+const VolunteersDescription = `
+<p>We would like you to share your skills, experiences, and love of sailing with our club.</p>
+<p>The following video series will familiarize yourself with how a typical sail works
+Blind Sailing Canada – Volunteer Onboarding Videos
+https://www.youtube.com/playlist?list=PLQF4xqPCYq0AerRJufIBWMU_deFwa-6lW</p>
+`
 const Volunteers = [
     {
         title: 'Skipper',

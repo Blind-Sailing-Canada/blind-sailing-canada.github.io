@@ -12,6 +12,13 @@ It is our goal to make the pleasure of sailing accessible to blind and partially
 <p> Your financial support allows the charity to deliver and enrich our programs that benefit blind sailors. </p>
 <p> If you wish to make a finantial donation, please visit our CanadaHelps.org <a href="https://www.canadahelps.org/en/charities/id/90212/" target="_blank">account</a>. </p>
 <p>Our charitable tax number is <span class="charitable_tax_number">864 299 425 RR0001</span>.</p>
+<p>
+Blind Sailing Canada
+
+361 Front Street West, Suite 2705
+Toronto ON M5V 3R5
+Canada
+</p>
 <p>If you wish to support us in other ways, please feel free to contact us by email at <a href="mailto:info@blindsailing.ca">info@blindsailing.ca</a>.</p>
 <div>
 `;

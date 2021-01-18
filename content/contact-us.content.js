@@ -18,19 +18,7 @@ const SocialNetworks = [
         href: "https://www.linkedin.com/company/blindsailing",
         target: "_blank",
         label: 'LinkedIn',
-    },
-    {
-        class: "fa fa-youtube",
-        href: "https://www.youtube.com/channel/UCluZREjvbLSSWq60VHSbpXg",
-        target: "_blank",
-        label: 'Youtube',
-    },
-    {
-        class: "fa fa-instagram",
-        href: "#",
-        target: "_blank",
-        label: 'Instagram',
-    },
+    }
 ];
 
 const loadContactUsEmail = (displayId) => {
@@ -56,7 +44,7 @@ const displayContactUsSocialNetworks = (displayId) => {
     let socialNetworksList = '';
 
     SocialNetworks.forEach((socialNetwork) => {
-        socialNetworksList += `<a class="${socialNetwork.class}" href=${socialNetwork.href} target="${socialNetwork.target}"></a>`;
+        socialNetworksList += `<a class="${socialNetwork.class}" href=${socialNetwork.href} target="${socialNetwork.target}" title="${socialNetwork.label}"></a>`;
     });
 
     display.innerHTML = socialNetworksList;

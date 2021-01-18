@@ -8,6 +8,7 @@ const autoPlayVideo = (videoId) => {
                 console.log(entry.intersectionRatio)
                 if (entry.intersectionRatio >= 0.4) {
                     video.play();
+                    // video.muted = video.muted? true: false
                     isPaused = false;
                 } else {
                     video.pause();
