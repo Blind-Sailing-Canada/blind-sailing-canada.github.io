@@ -7,12 +7,12 @@ const autoPlayVideo = (videoId) => {
             entries.forEach(entry => {
                 console.log(entry.intersectionRatio)
                 if (entry.intersectionRatio >= 0.4) {
-                    video.play();
+                    // video.play();
                     // video.muted = video.muted? true: false
                     isPaused = false;
                 } else {
-                    video.pause();
-                    isPaused = true;
+                    // video.pause();
+                    // isPaused = true;
                 }
             });
         }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
