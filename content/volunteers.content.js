@@ -1,32 +1,32 @@
-const VolunteersDescription = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+const VolunteersDescription = 'We would like you to share your skills, experiences, and love of sailing with our club.'
 const Volunteers = [
     {
         title: 'Skipper',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Requirements: Toronto Harbour License, POC, VHF license.',
     },
     {
         title: 'Crew',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Requirements: Basic knowledge of sailing and handling the boat.',
     },
     {
         title: 'Boat Maintenance',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Help with general boat maintenance, preping the boats for start of the season, and putting the boats away for the winter.',
     },
     {
         title: 'Social events',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Help organize and run out sovial event.',
     },
     {
         title: 'Social media',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Help us maintain our online presence.',
     },
     {
         title: 'Fund raising',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Help us raise funds.',
     },
     {
         title: 'Web development',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        description: 'Help us with maintaing and developing our open-source website and web app. Checkout out our <a href="https://github.com/Blind-Sailing-Canada" target="_blank">github account</a>.',
     },
 ];
 
@@ -34,7 +34,7 @@ const Volunteers = [
 const loadVolunteersDescription = (displayId) => {
     const display = document.getElementById(displayId);
 
-    display.innerHTML = SponsorsDescription;
+    display.innerHTML = VolunteersDescription;
 };
 
 const loadVolunteersList = (displayId) => {

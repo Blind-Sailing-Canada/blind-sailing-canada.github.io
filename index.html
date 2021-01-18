@@ -43,6 +43,11 @@
             type="text/css"
         >
         <link
+            href="./styles/about-us.css"
+            rel="stylesheet"
+            type="text/css"
+        >
+        <link
             rel="icon"
             href="./assets/images/favicon.ico"
             type="image/x-icon"
@@ -53,6 +58,7 @@
         <script src="./content/header.content.js"></script>
         <script src="./content/nav-links.content.js"></script>
         <script src="./content/about-us.content.js"></script>
+        <script src="./content/fleet.content.js"></script>
         <script src="./content/sponsors.content.js"></script>
         <script src="./content/become-sponsor.content.js"></script>
         <script src="./content/volunteers.content.js"></script>
@@ -89,7 +95,6 @@
                         >Accessible Version</a>
                         <ol id="navigationList"></ol>
                     </nav>
-
                 </section>
             </article>
             <article class="card bgimg-2">
@@ -106,8 +111,20 @@
                             width="60%"
                         ></video>
                     </section>
-                    <section class="card-content-body">
+                    <section class="card-content-body about-us-text">
                         <p id="aboutUsDescription"></p>
+                    </section>
+                </div>
+            </article>
+            <article class="card bgimg-4">
+                <div class="card-content-container">
+                    <h3 class="card-header"><a id="fleet">FLEET</a></h3>
+                    <section class="card-content-body">
+                        <div id="fleetDescription"></div>
+                        <div
+                            id="boatsList"
+                            class="boats-list"
+                        ></div>
                     </section>
                 </div>
             </article>
@@ -115,13 +132,18 @@
                 <div class="card-content-container">
                     <h3 class="card-header"><a id="sponsors">SPONSORS</a></h3>
                     <section class="card-content-body">
-                        <p id="sponsorsDescription"></p>
-                        <div
-                            class="sponsor-list"
-                            id="sponsorsList"
-                        ></div>
-                        <h4>Become a sponsor</h4>
-                        <article id="becomeSponsor"></article>
+                        <div>
+                            <div id="sponsorsDescription"></div>
+                            <div
+                                class="sponsor-list"
+                                id="sponsorsList"
+                            ></div>
+                            <h4>Become a sponsor</h4>
+                            <article
+                                id="becomeSponsor"
+                                class="become-sponsor-text"
+                            ></article>
+                        </div>
                     </section>
                 </div>
             </article>
@@ -129,13 +151,15 @@
                 <div class="card-content-container">
                     <h3 class="card-header"><a id="volunteers">VOLUNTEERS</a></h3>
                     <section class="card-content-body">
-                        <p id="volunteersDescription"></p>
-                        <div
-                            id="volunteerPositions"
-                            class="volunteer-position-list"
-                        ></div>
-                        <h4>Become a volunteer</h4>
-                        <p id="becomeVolunteer"></p>
+                        <div>
+                            <p id="volunteersDescription"></p>
+                            <div
+                                id="volunteerPositions"
+                                class="volunteer-position-list"
+                            ></div>
+                            <h4>Become a volunteer</h4>
+                            <p id="becomeVolunteer"></p>
+                        </div>
                     </section>
                 </div>
             </article>
@@ -161,6 +185,8 @@
             loadHeader('mainHeader');
             loadNavLinks('navigationList');
             loadAboutUs('aboutUsDescription');
+            loadFleetDescription('fleetDescription');
+            loadBoatsList('boatsList');
             loadSponsorsDescription('sponsorsDescription');
             loadBecomeSponsor('becomeSponsor');
             loadVolunteersDescription('volunteersDescription');

@@ -37,3 +37,9 @@
     max-width: 270px;
     padding: 5px;
 }
+
+.become-sponsor-text {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}

@@ -1,5 +1,8 @@
 const AboutUsContent = {
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    description: `
+    <p>The Blind Sailing Association of Canada (BSAC) is a charitable organization mandated to bring the sailing experience to blind and visually impaired persons.<p>
+    <p>Out boats are skippered and crewed by sighted volunteers.</p>
+    <p>The BSAC has a number of sailing programs for all levels of interest raning from learning how to sail to internation raicing.</p>`
 };
 
 const loadAboutUs = (displayId) => {

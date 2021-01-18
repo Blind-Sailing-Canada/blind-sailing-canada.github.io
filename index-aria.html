@@ -10,6 +10,7 @@
         <script src="./content/header.content.js"></script>
         <script src="./content/nav-links.content.js"></script>
         <script src="./content/about-us.content.js"></script>
+        <script src="./content/fleet.content.js"></script>
         <script src="./content/sponsors.content.js"></script>
         <script src="./content/become-sponsor.content.js"></script>
         <script src="./content/volunteers.content.js"></script>
@@ -27,6 +28,15 @@
             <article>
                 <h3><a id="about">ABOUT US</a></h3>
                 <p id="aboutUsDescription"></p>
+            </article>
+            <article>
+                <h3><a id="fleet">Fleet</a></h3>
+                <section>
+                    <p id="fleetDescription"></p>
+                    <dl
+                        id="boatsList"
+                    ></dl>
+                </section>
             </article>
             <article>
                 <h3><a id="sponsors">SPONSORS</a></h3>
@@ -69,6 +79,8 @@
             loadHeader('mainHeader');
             loadNavLinks('navigationList');
             loadAboutUs('aboutUsDescription');
+            loadFleetDescription('fleetDescription');
+            loadBoatsList('boatsList');
             loadSponsorsDescription('sponsorsDescription');
             loadSponsorsList('sponsorsList');
             loadBecomeSponsor('becomeSponsor');

@@ -4,6 +4,10 @@ const NavLinks = [
         href: '#about',
     },
     {
+        label: 'Fleet',
+        href: '#fleet',
+    },
+    {
         label: 'Sponsors',
         href: '#sponsors',
     },

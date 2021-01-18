@@ -1,15 +1,18 @@
 .card {
-    height: 100%;
     min-height: 100%;
     scroll-snap-align: center;
     scroll-snap-stop: always;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-content-body {
     background-color: rgba(255, 255, 255, 0.884);
     padding: 10px;
     color: black;
+    width: 100%
 }
 
 .card-content-container {
@@ -27,4 +30,31 @@
     margin: 0;
     font-size: 25px;
     letter-spacing: 10px;
+    width: 100%;
 }
+
+@media only screen and (max-device-width: 1024px) {
+    .card-content-container {
+        position: relative;
+        top: 0;
+        transform: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* @media only screen and (max-device-width: 1024px) {
+    .card-content-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        min-height: 100%;
+        position: relative;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+} */
