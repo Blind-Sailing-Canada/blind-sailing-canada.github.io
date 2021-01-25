@@ -31,15 +31,20 @@
 .sponsor-info-footer {
     margin-top: auto;
     text-align: center;
+    white-space: break-spaces;
+    word-break: break-all;
 }
 
 .sponsor-image {
-    max-width: 270px;
+    max-width: 170px;
     padding: 5px;
 }
 
-.become-sponsor-text {
-    display: flex;
-    justify-content: center;
+.charitable_tax_number {
+    font-weight: bold;
+}
+
+address {
     text-align: left;
+    margin-bottom: 10px;
 }

@@ -1,14 +1,3 @@
-.social-networks-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.social-networks-list a {
-    margin: 10px;
-}
-
 .fa {
     padding: 20px;
     font-size: 30px;

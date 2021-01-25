@@ -1,104 +1,88 @@
 body, html {
-    color: #777;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    height: 100%;
+    color: #1f3a4a;
+    font: 400 20px/1.8 "Lato", sans-serif;
     margin: 0;
+    min-height: 100%;
+    position: relative;
+    position: relative;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    text-align: center;
+    scroll-snap-type: y proximity;
+    width: 100%;
 }
 
 header h1 {
     font-size: 2em;
 }
 
-h1, h2 {
-    margin: 0;
+h1, h2, h3, h4, h5 {
+    margin: 10px 0;
     padding: 0;
     text-transform: uppercase;
 }
 
-nav {
-    margin: 10px;
-    text-transform: uppercase;
+.main-header h1 {
+    margin-bottom: 20px;
 }
 
-nav ol {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-}
-
-nav li {
-    padding: 0;
-    margin: 0;
-}
-
-.home {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-nav a {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 5px;
-    margin: 10px;
-    padding: 10px;
-    text-decoration: underline;
-}
-
-nav a:hover {
-    background-color: rgba(0, 191, 255, 0.582);
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    position: relative;
+.bg-img {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.bgimg-1 {
-    background-image: url("../assets/images/bg1.jpg");
+.bg-img-1 {
+    background-image: url("../assets/images/background/bg1.jpg");
 }
 
-.bgimg-2 {
-    background-image: url("../assets/images/bg2.jpg");
+.bg-img-2 {
+    background-image: url("../assets/images/background/bg2.jpg");
 }
 
-.bgimg-3 {
-    background-image: url("../assets/images/bg3.jpg");
+.bg-img-3 {
+    background-image: url("../assets/images/background/bg3.jpg");
 }
 
-.bgimg-4 {
-    background-image: url("../assets/images/bg4.jpg");
+.bg-img-4 {
+    background-image: url("../assets/images/background/bg4.jpg");
 }
 
-.charitable_tax_number {
-    font-weight: bold;
+.bg-img-5 {
+    background-image: url("../assets/images/background/bg5.jpg");
 }
 
-.volunteer-position-list {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, minmax(400px, 400px));
-    justify-content: center;
+.bg-img-6 {
+    background-image: url("../assets/images/background/bg6.jpg");
 }
 
 .bsc-logo {
-    width: 300px;
+    display: block;
+    margin: 20px auto;
+    width: 150px;
 }
 
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.hidden {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .bg-img {
         background-attachment: scroll !important;
     }
+    .bsc-logo {
+        width: 150px;
+        display: none;
+    }
+    .main-header h1 {
+        font-size: 3rem;
+    }
+    .main-header h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
     * {
         font-size: xx-large;
         scroll-snap-align: unset !important;

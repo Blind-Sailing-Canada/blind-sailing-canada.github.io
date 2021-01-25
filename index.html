@@ -2,6 +2,14 @@
 
     <head>
         <title>Blind Sailing Canada</title>
+        <meta
+            name="description"
+            content="Sailing club for visually impaired in Toronto, Ontario Canada."
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
             rel="stylesheet"
@@ -14,6 +22,26 @@
         >
         <link
             href="./styles/content-card.css"
+            rel="stylesheet"
+            type="text/css"
+        >
+        <link
+            href="./styles/about.css"
+            rel="stylesheet"
+            type="text/css"
+        >
+        <link
+            href="./styles/fleet.css"
+            rel="stylesheet"
+            type="text/css"
+        >
+        <link
+            href="./styles/members.css"
+            rel="stylesheet"
+            type="text/css"
+        >
+        <link
+            href="./styles/volunteers.css"
             rel="stylesheet"
             type="text/css"
         >
@@ -33,7 +61,7 @@
             type="text/css"
         >
         <link
-            href="./styles/up-scroller.css"
+            href="./styles/up-down-scroller.css"
             rel="stylesheet"
             type="text/css"
         >
@@ -43,7 +71,7 @@
             type="text/css"
         >
         <link
-            href="./styles/about-us.css"
+            href="./styles/nav-menu.css"
             rel="stylesheet"
             type="text/css"
         >
@@ -53,144 +81,110 @@
             type="image/x-icon"
         >
         <script src="./js/accordion.js"></script>
-        <script src="./js/up-scroller.js"></script>
-        <script src="./js/video.js"></script>
-        <script src="./content/header.content.js"></script>
-        <script src="./content/nav-links.content.js"></script>
-        <script src="./content/about-us.content.js"></script>
-        <script src="./content/fleet.content.js"></script>
-        <script src="./content/sponsors.content.js"></script>
-        <script src="./content/become-sponsor.content.js"></script>
+        <script src="./js/up-down-scroller.js"></script>
+        <script src="./js/pages.js"></script>
+        <script src="./js/nav.js"></script>
         <script src="./content/volunteers.content.js"></script>
-        <script src="./content/become-volunteer.content.js"></script>
-        <script src="./content/contact-us.content.js"></script>
     </head>
 
-    <body>
+    <body class="bg-img bg-img-1">
         <div
-            id="upScroller"
-            class="up-scroller"
+            id="upDownScroller"
+            class="up-down-scroller"
+            aria-hidden="true"
         >
             <i
-                class="fa fa-chevron-up fa-2x"
+                class="fa fa-chevron-down fa-5x"
                 aria-hidden="true"
+                id="down-scroller"
+            ></i>
+            <i
+                class="fa fa-chevron-up fa-5x"
+                aria-hidden="true"
+                id="up-scroller"
             ></i>
         </div>
         <img
             class="bsc-logo"
             src="./assets/images/bsc-logo.svg"
+            alt="BSAC Logo"
+            aria-hidden="true"
         >
-        <main>
-            <article class="card bgimg-1">
+        <nav>
+            <div class="nav-menu-controls">
+                <button
+                    type="button"
+                    id="nav-menu-open-button"
+                    onclick="openNavMenu()"
+                    title="Open navigation menu"
+                >
+                    <i class="fa fa-bars"></i>
+                </button>
+                <button
+                    type="button"
+                    id="nav-menu-close-button"
+                    class="hidden"
+                    onclick="closeNavMenu()"
+                    title="Close navigation menu"
+                >
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+            <div
+                aria-expanded="true"
+                aria-atomic="true"
+                aria-label="Navigation menu"
+                class="nav-links nav-menu card-header"
+                id="nav-menu"
+                role="list"
+                tabindex="1"
+            >
+                <a
+                    href="#about"
+                    onclick="closeNavMenu()"
+                    tabindex="1"
+                >About</a>
+                <a
+                    href="#fleet"
+                    onclick="closeNavMenu()"
+                >Fleet</a>
+                <a
+                    href="#sponsors"
+                    onclick="closeNavMenu()"
+                >Sponsors</a>
+                <a
+                    href="#volunteers"
+                    onclick="closeNavMenu()"
+                >Volunteers</a>
+                <a
+                    href="#members"
+                    onclick="closeNavMenu()"
+                >Members</a>
+                <a
+                    href="#contact"
+                    onclick="closeNavMenu()"
+                >Contact</a>
+            </div>
+        </nav>
+        <main id="main">
+            <article class="card bg-img bg-img-1">
                 <section class="card-content-container home">
-                    <header
-                        class="card-header"
-                        id="mainHeader"
-                    >
+                    <header class="card-header main-header">
+                        <h1>Blind Sailing Canada</h1>
+                        <h2>Catch the wind, feel the freedom.</h2>
                     </header>
-                    <nav class="card-header">
-                        <ol id="navigationList"></ol>
-                    </nav>
                 </section>
             </article>
-            <article class="card bgimg-2">
+            <div id="content"></div>
+            <footer class="card bg-img bg-img-1">
                 <div class="card-content-container">
-                    <h3 class="card-header"><a id="about">ABOUT US</a></h3>
-                    <section>
-                        <video
-                            poster="./assets/images/ami-video-poster.JPG"
-                            controls
-                            id="video_BSC_AMI"
-                            src="./assets/videos/bsc-ami.mp4"
-                            width="60%"
-                        ></video>
-                    </section>
-                    <section class="card-content-body about-us-text">
-                        <p id="aboutUsDescription"></p>
-                    </section>
+                    <p class="card-header">COPYRIGHT BLIND SAILING CANADA 2021</p>
                 </div>
-            </article>
-            <article class="card bgimg-4">
-                <div class="card-content-container">
-                    <h3 class="card-header"><a id="fleet">FLEET</a></h3>
-                    <section class="card-content-body">
-                        <div id="fleetDescription"></div>
-                        <div
-                            id="boatsList"
-                            class="boats-list"
-                        ></div>
-                    </section>
-                </div>
-            </article>
-            <article class="card bgimg-3">
-                <div class="card-content-container">
-                    <h3 class="card-header"><a id="sponsors">SPONSORS</a></h3>
-                    <section class="card-content-body">
-                        <div>
-                            <div id="sponsorsDescription"></div>
-                            <div
-                                class="sponsor-list"
-                                id="sponsorsList"
-                            ></div>
-                            <h4>Become a sponsor</h4>
-                            <article
-                                id="becomeSponsor"
-                                class="become-sponsor-text"
-                            ></article>
-                        </div>
-                    </section>
-                </div>
-            </article>
-            <article class="card bgimg-4">
-                <div class="card-content-container">
-                    <h3 class="card-header"><a id="volunteers">VOLUNTEERS</a></h3>
-                    <section class="card-content-body">
-                        <div>
-                            <p id="volunteersDescription"></p>
-                            <div
-                                id="volunteerPositions"
-                                class="volunteer-position-list"
-                            ></div>
-                            <h4>Become a volunteer</h4>
-                            <p id="becomeVolunteer"></p>
-                        </div>
-                    </section>
-                </div>
-            </article>
-            <article class="card bgimg-2">
-                <div class="card-content-container">
-                    <h3 class="card-header"><a id="contact">CONTACT</a></h3>
-                    <section class="card-content-body">
-                        <h3>Email</h3>
-                        <p id="contactEmail"></p>
-                        <h3>Social Networks</h3>
-                        <p>You can also connect with us on social networks:</p>
-                        <ol id="socialNetworksList"></ol>
-                    </section>
-                </div>
-            </article>
+            </footer>
         </main>
-        <footer class="card bgimg-1">
-            <div class="card-content-container">
-                <p class="card-header">COPYRIGHT BLIND SAILING CANADA 2020</p>
-            </div>
-        </footer>
         <script>
-            loadHeader('mainHeader');
-            loadNavLinks('navigationList');
-            loadAboutUs('aboutUsDescription');
-            loadFleetDescription('fleetDescription');
-            loadBoatsList('boatsList');
-            loadSponsorsDescription('sponsorsDescription');
-            loadBecomeSponsor('becomeSponsor');
-            loadVolunteersDescription('volunteersDescription');
-            loadBecomeVolunteer('becomeVolunteer');
-            loadContactUsEmail('contactEmail');
-            displaySponsors('sponsorsList');
-            displayContactUsSocialNetworks('socialNetworksList');
-            autoPlayVideo('video_BSC_AMI');
-            setUpScroll('upScroller');
-            createAccordion('volunteerPositions', Volunteers);
+            loadPages()
+            setUpDownScroller('upDownScroller');
         </script>
     </body>
 

@@ -1,0 +1,73 @@
+<html>
+
+    <head>
+        <title>Blind Sailing Canada - Pay Fees</title>
+        <link
+            href="../styles/pay-fees.css"
+            rel="stylesheet"
+            type="text/css"
+        >
+    </head>
+
+    <body>
+        <header>
+            <img
+                src="../assets/images/bsc-logo.svg"
+                aria-hidden="true"
+            >
+            <h1 class="entry-title">Pay Fees</h1>
+        </header>
+        <article
+            id="post-181"
+            class="post-181 page type-page status-publish hentry"
+        >
+            <div class="entry-content">
+                <p>Thank you for making your payment online.</p>
+                <p>Please select your option from the drop down menu and press the Pay now button to complete payment securely with PayPal.</p>
+                <p>If you do not have a PayPal Account, you may also make a one time payment using your credit card.</p>
+                <form
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                    target="_top"
+                >
+                    <input
+                        type="hidden"
+                        name="cmd"
+                        value="_s-xclick"
+                    >
+                    <input
+                        type="hidden"
+                        name="hosted_button_id"
+                        value="85X35LMBRYFMS"
+                    >
+                    <input
+                        type="hidden"
+                        name="on0"
+                        value="Options"
+                    >
+                    <label>Options</label>
+                    <select name="os0">
+                        <option value="Single Sail">Single Sail $10.00 CAD</option>
+                        <option value="Guest Fee">Single Sail Guest Fee $15.00 CAD</option>
+                        <option value="Membership plus 10 Sails">Membership plus 10 Sails $95.00 CAD</option>
+                        <option value="Membership plus Unlimited Sails">Membership plus Unlimited Sails $125.00 CAD</option>
+                        <option value="Membership Only">Membership Only $20.00 CAD</option>
+                    </select>
+                    </tr>
+                    <input
+                        type="hidden"
+                        name="currency_code"
+                        value="CAD"
+                    >
+                    <input
+                        type="image"
+                        src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif"
+                        border="0"
+                        name="submit"
+                        alt="Pay now"
+                    >
+                </form>
+        </article>
+    </body>
+
+</html>

@@ -1,9 +1,3 @@
-const VolunteersDescription = `
-<p>We would like you to share your skills, experiences, and love of sailing with our club.</p>
-<p>The following video series will familiarize yourself with how a typical sail works
-Blind Sailing Canada – Volunteer Onboarding Videos
-https://www.youtube.com/playlist?list=PLQF4xqPCYq0AerRJufIBWMU_deFwa-6lW</p>
-`
 const Volunteers = [
     {
         title: 'Skipper',
@@ -11,15 +5,15 @@ const Volunteers = [
     },
     {
         title: 'Crew',
-        description: 'Requirements: Basic knowledge of sailing and handling the boat.',
+        description: 'Requirements: Basic knowledge of sailing and boat handling.',
     },
     {
         title: 'Boat Maintenance',
-        description: 'Help with general boat maintenance, preping the boats for start of the season, and putting the boats away for the winter.',
+        description: 'Help with general boat maintenance, prepping the boats for start of the season, and putting the boats away for off-season.',
     },
     {
         title: 'Social events',
-        description: 'Help organize and run out sovial event.',
+        description: 'Help organize and run our social event.',
     },
     {
         title: 'Social media',
@@ -31,16 +25,9 @@ const Volunteers = [
     },
     {
         title: 'Web development',
-        description: 'Help us with maintaing and developing our open-source website and web app. Checkout out our <a href="https://github.com/Blind-Sailing-Canada" target="_blank">github account</a>.',
+        description: 'Help us maintain and develop our open-source website and web app. Checkout our <a href="https://github.com/Blind-Sailing-Canada" target="_blank">github account</a>.',
     },
 ];
-
-
-const loadVolunteersDescription = (displayId) => {
-    const display = document.getElementById(displayId);
-
-    display.innerHTML = VolunteersDescription;
-};
 
 const loadVolunteersList = (displayId) => {
     const display = document.getElementById(displayId);
