@@ -1,0 +1,43 @@
+body {
+    background-color: #386B88;
+    color: white;
+    font: 400 20px/1.8 "Lato", sans-serif;
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    width: 100%;
+}
+
+header {
+    align-items: center;
+    background-color: white;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto 1fr;
+    height: 150px;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+    color: #1f3a4a;
+}
+
+header img {
+    height: 120px;
+    width: 100px;
+}
+
+article {
+    padding: 1rem;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: min-content;
+    grid-gap: 20px;
+}
