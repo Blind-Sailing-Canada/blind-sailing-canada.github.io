@@ -1,0 +1,25 @@
+.up-down-scroller {
+    align-items: center;
+    color: #c8bfb8;
+    display: flex;
+    height: 30px !important;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 9999999999;
+}
+
+.up-down-scroller i {
+    cursor: pointer;
+    display: block !important;
+    padding: 0 !important;
+    font-size: 3rem !important
+}
+
+.up-down-scroller i.hide {
+    display: none !important;
+}
+
+.up-down-scroller i:hover {
+    color: deepskyblue
+}

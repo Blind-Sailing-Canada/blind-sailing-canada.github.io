@@ -1,0 +1,13 @@
+.volunteer-position-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(400px, 400px));
+    justify-content: center;
+}
+
+
+@media (max-width: 950px) {
+    .volunteer-position-list {
+        grid-template-columns: auto;
+    }
+}

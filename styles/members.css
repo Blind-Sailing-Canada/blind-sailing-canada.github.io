@@ -1,0 +1,19 @@
+.member-activity-list dt {
+    font-weight: bold;
+}
+
+.member-activity-list {
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.member-fee-list dt {
+    font-weight: bold;
+}
+
+.member-fee-list {
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+}
