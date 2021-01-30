@@ -8,7 +8,7 @@ const Volunteers = [
         description: 'Requirements: Basic knowledge of sailing and boat handling.',
     },
     {
-        title: 'Boat Maintenance',
+        title: 'Boat maintenance',
         description: 'Help with general boat maintenance, prepping the boats for start of the season, and putting the boats away for off-season.',
     },
     {
@@ -28,15 +28,3 @@ const Volunteers = [
         description: 'Help us maintain and develop our open-source website and web app. Checkout our <a href="https://github.com/Blind-Sailing-Canada" target="_blank">github account</a>.',
     },
 ];
-
-const loadVolunteersList = (displayId) => {
-    const display = document.getElementById(displayId);
-
-    let volunteersList = '';
-
-    Volunteers.forEach((volunteer) => {
-        volunteersList += `<dt>${volunteer.title}</dt><dd>${volunteer.description}</dd>`;
-    });
-
-    display.innerHTML = volunteersList;
-};

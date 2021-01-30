@@ -34,6 +34,9 @@ article {
     padding: 1rem;
 }
 
+a, a:active, a:hover, a:visited {
+    color: #ffffff;
+}
 
 form {
     display: grid;
