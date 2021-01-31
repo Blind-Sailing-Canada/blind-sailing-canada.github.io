@@ -183,8 +183,7 @@
             </footer>
         </main>
         <script>
-            loadPages()
-            setUpDownScroller('upDownScroller');
+            loadPages().then(() => setUpDownScroller('upDownScroller'))
         </script>
     </body>
 

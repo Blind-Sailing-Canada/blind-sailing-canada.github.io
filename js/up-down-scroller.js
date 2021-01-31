@@ -27,7 +27,6 @@ function setUpDownScroller (upDownScrollerId) {
     };
 
     downScroller.onclick = function () {
-        console.log("window.innerHeight",window.innerHeight);
         window.scrollBy(0, window.innerHeight);
         return false;
     };
