@@ -35,3 +35,13 @@ function setUpDownScroller (upDownScrollerId) {
 
     window.addEventListener('scroll', scrollListener);
 }
+
+function showUpDownScroller() {
+    const scroller = document.findElementById('upDownScroller');
+    scroller.classList.remove("hide");
+}
+
+function hideUpDownScroller() {
+    const scroller = document.findElementById('upDownScroller');
+    scroller.classList.add("hide");
+}
