@@ -38,10 +38,10 @@ function setUpDownScroller (upDownScrollerId) {
 
 function showUpDownScroller() {
     const scroller = document.getElementById('upDownScroller');
-    scroller.classList.remove("hide");
+    scroller.classList.remove("hidden");
 }
 
 function hideUpDownScroller() {
     const scroller = document.getElementById('upDownScroller');
-    scroller.classList.add("hide");
+    scroller.classList.add("hidden");
 }
