@@ -6,7 +6,7 @@ function setUpDownScroller (upDownScrollerId) {
 
     const scrollListener = () => {
         const newTop = window.scrollY + window.innerHeight - 70;
-        upDownScroller.style.top = newTop;
+        upDownScroller.style.top = `${newTop}px`;
         
         console.log('window.scrollY', window.scrollY)
         console.log('window.innerHeight', window.innerHeight)
