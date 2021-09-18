@@ -37,11 +37,11 @@ function setUpDownScroller (upDownScrollerId) {
 }
 
 function showUpDownScroller() {
-    const scroller = document.findElementById('upDownScroller');
+    const scroller = document.getElementById('upDownScroller');
     scroller.classList.remove("hide");
 }
 
 function hideUpDownScroller() {
-    const scroller = document.findElementById('upDownScroller');
+    const scroller = document.getElementById('upDownScroller');
     scroller.classList.add("hide");
 }
