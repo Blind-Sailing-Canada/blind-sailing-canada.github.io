@@ -20,8 +20,8 @@ async function loadPages() {
     await loadPage('./pages/about.html');
     await loadPage('./pages/fleet.html');
     await loadPage('./pages/sponsors.html');
+    await loadPage('./pages/members.html');
     await loadPage('./pages/volunteers.html');
     await createAccordion('volunteerPositions', Volunteers);
-    await loadPage('./pages/members.html');
     await loadPage('./pages/contact.html');
 }
