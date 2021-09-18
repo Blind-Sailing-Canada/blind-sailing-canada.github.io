@@ -90,4 +90,12 @@ h1, h2, h3, h4, h5 {
         scroll-behavior: unset !important;
         scroll-snap-type: none !important;
     }
+    
+    .sponsor-list {
+        width: 90%;
+    }
+    
+    .flip-box {
+        width: 90%;
+    }
 }
