@@ -98,4 +98,8 @@ h1, h2, h3, h4, h5 {
     .flip-box {
         width: 90% !important;
     }
+    
+    body, html {
+        overflow-x: hidden !important;
+    }
 }
