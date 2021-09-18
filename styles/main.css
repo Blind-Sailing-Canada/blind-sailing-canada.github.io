@@ -7,7 +7,6 @@ body, html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
     width: 100%;
-    overflow-x: hidden;
 }
 
 header h1 {
@@ -22,6 +21,10 @@ h1, h2, h3, h4, h5 {
 
 .main-header h1 {
     margin-bottom: 20px;
+}
+
+main {
+    overflow-x: hidden;
 }
 
 .bg-img {
