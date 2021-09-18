@@ -1,4 +1,6 @@
 function openNavMenu() {
+    hideUpDownScroller();
+    
     const main = document.getElementById("main");
     main.setAttribute('aria-hidden', 'true');
 
@@ -17,6 +19,8 @@ function openNavMenu() {
 }
 
 function closeNavMenu() {
+    showUpDownScroller();
+    
     const main = document.getElementById("main");
     main.setAttribute('aria-hidden', 'false');
 
