@@ -5,10 +5,12 @@ function setUpDownScroller (upDownScrollerId) {
     const downScroller = document.getElementById('down-scroller');
 
     const scrollListener = () => {
-        upDownScroller.style.top = window.scrollY + window.innerHeight - 70;
+        const newTop = window.scrollY + window.innerHeight - 70;
+        upDownScroller.style.top = newTop;
         
         console.log('window.scrollY', window.scrollY)
         console.log('window.innerHeight', window.innerHeight)
+        console.log('newTop', newTop)
         console.log('upDownScroller.style.top', upDownScroller.style.top)
 
         if (window.pageYOffset > 400) {
