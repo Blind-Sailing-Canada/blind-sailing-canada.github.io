@@ -16,6 +16,9 @@ function openNavMenu() {
 
     const openButton = document.getElementById('nav-menu-open-button');
     openButton.classList.toggle("hidden");
+    
+    const main = document.getElementsByTagName('main')[0];
+    main.classList.toggle("hidden");
 }
 
 function closeNavMenu() {
@@ -35,4 +38,7 @@ function closeNavMenu() {
 
     const openButton = document.getElementById('nav-menu-open-button');
     openButton.classList.toggle("hidden");
+    
+    const main = document.getElementsByTagName('main')[0];
+    main.classList.toggle("hidden");
 }
