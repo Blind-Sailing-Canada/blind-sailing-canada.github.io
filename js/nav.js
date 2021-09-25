@@ -2,10 +2,7 @@ function openNavMenu() {
     hideUpDownScroller();
     
     const main = document.getElementById("main");
-    main.setAttribute('aria-hidden', 'true');
-
-    // hide all other links
-    main.querySelectorAll("a").forEach(a => a.setAttribute('tabIndex', '-1'))
+    main.classList.toggle("hidden");
 
     const menu = document.getElementById("nav-menu");
     menu.classList.toggle("open");
@@ -16,19 +13,13 @@ function openNavMenu() {
 
     const openButton = document.getElementById('nav-menu-open-button');
     openButton.classList.toggle("hidden");
-    
-    const main = document.getElementsByTagName('main')[0];
-    main.classList.toggle("hidden");
 }
 
 function closeNavMenu() {
     showUpDownScroller();
     
     const main = document.getElementById("main");
-    main.setAttribute('aria-hidden', 'false');
-
-    // un-hide all other links
-    main.querySelectorAll("a").forEach(a => a.removeAttribute('tabIndex'))
+    main.classList.toggle("hidden");
 
     const menu = document.getElementById("nav-menu");
     menu.classList.toggle("open");
@@ -38,7 +29,4 @@ function closeNavMenu() {
 
     const openButton = document.getElementById('nav-menu-open-button');
     openButton.classList.toggle("hidden");
-    
-    const main = document.getElementsByTagName('main')[0];
-    main.classList.toggle("hidden");
 }
