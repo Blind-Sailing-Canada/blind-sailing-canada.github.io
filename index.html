@@ -240,7 +240,11 @@
         </script>
         <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
         <script>
-            new Snowflakes({color: '#ffffff'});
+            const month = new Date().getMonth();
+            
+            if (month >= 11 && month <= 1) {
+                new Snowflakes({color: '#ffffff'});
+            }
         </script>
     </body>
 
