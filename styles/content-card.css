@@ -19,6 +19,9 @@
     width: 100%;
 }
 
+.card-content-body a {
+    overflow-wrap: anywhere;
+}
 
 .card-content-container {
     width: 100%;
