@@ -44,3 +44,7 @@ form {
     width: min-content;
     grid-gap: 20px;
 }
+
+pre {
+    white-space: break-spaces;   
+}
